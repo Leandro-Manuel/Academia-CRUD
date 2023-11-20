@@ -11,9 +11,6 @@ meucursor = banco.cursor()
 
 from biblioteca import *
 
-nmr_menu_principal = 0
-nmr_menu_secundaria = 0
-
 while True:
     print('=='*9 + 'MENU' + '=='*12)
     escolha1 = int(input('Digite 1 para selecionar a tabela alunos.\n'
@@ -23,19 +20,7 @@ while True:
                          'Digite 5 para sair do programa.\n'
                          + '==' * 23 + '\n'
                          'Resposta: '))
-    if escolha1 == 1:
-        nmr_menu_principal = 1
-
-    elif escolha1 == 2:
-        nmr_menu_principal = 2
-
-    elif escolha1 == 3:
-        nmr_menu_principal = 3
-
-    elif escolha1 == 4:
-        nmr_menu_principal = 4
-
-    else:
+    if escolha1 == 5:
         break
 
     while True:
@@ -47,22 +32,10 @@ while True:
                              'Digite 5 para voltar.\n'
                              + '==' * 23 + '\n'
                              'Resposta: '))
-        if escolha2 == 1:
-            nmr_menu_secundaria = 1
-
-        elif escolha2 == 2:
-            nmr_menu_secundaria = 2
-
-        elif escolha2 == 3:
-            nmr_menu_secundaria = 3
-
-        elif escolha2 == 4:
-            nmr_menu_secundaria = 4
-
-        else:
+        if escolha2 == 5:
             break
 
-        if nmr_menu_principal == 1 and nmr_menu_secundaria == 1:
+        if escolha1 == 1 and escolha2 == 1:
             nome = input('Digite o seu nome: ')
             cpf = input('Digite o seu cpf: ')
             endereco = input('Digite o seu endereço: ')
@@ -70,11 +43,11 @@ while True:
             email = input('Digite o seu e-mail: ')
             inserir_alunos(nome,cpf,endereco,telefone,email)
 
-        if nmr_menu_principal == 2 and nmr_menu_secundaria == 1:
+        if escolha1 == 2 and escolha2 == 1:
             nome = input('Digite o nome da modalidade: ')
             inserir_modalidades(nome)
 
-        if nmr_menu_principal == 3 and nmr_menu_secundaria == 1:
+        if escolha1 == 3 and escolha2 == 1:
             nome = input('Digite o nome do funcionário: ')
             cpf = input('Digite o cpf: ')
             departamento = input('Digite o número do departamento: ')
@@ -82,7 +55,7 @@ while True:
             qtdFilhos = input('Informe a quantidade de filho do funcionário: ')
             inserir_func(nome,cpf,departamento,salario,qtdFilhos)
 
-        if nmr_menu_principal == 4 and nmr_menu_secundaria == 1:
+        if escolha1 == 4 and escolha2 == 1:
             cpf = input('Digite o número de cpf: ')
             cref = input('Digite o número do cref: ')
             nome = input('Digite o nome do personal: ')
@@ -91,7 +64,7 @@ while True:
             email = input('Digite o email: ')
             inserir_personal(cpf,cref,nome,telefone,endereco,email)
 
-        
+
 
 
 
