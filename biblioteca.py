@@ -1,5 +1,6 @@
 #conectou a biblioteca no banco de dados
 
+
 from teste import *
 cursor = banco.cursor()
 

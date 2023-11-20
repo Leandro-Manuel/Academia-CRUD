@@ -20,8 +20,8 @@ while True:
                          'Digite 5 para sair do programa.\n'
                          + '==' * 23 + '\n'
                          'Resposta: '))
-    if escolha1 == 5:
-        break
+        if escolha1 == 5:
+            break
 
     while True:
         print('==' * 23)
@@ -32,8 +32,8 @@ while True:
                              'Digite 5 para voltar.\n'
                              + '==' * 23 + '\n'
                              'Resposta: '))
-        if escolha2 == 5:
-            break
+            if escolha2 == 5:
+                break
 
         if escolha1 == 1 and escolha2 == 1:
             nome = input('Digite o seu nome: ')
