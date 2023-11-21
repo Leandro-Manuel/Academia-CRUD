@@ -20,8 +20,9 @@ while True:
                          'Digite 5 para sair do programa.\n'
                          + '==' * 23 + '\n'
                          'Resposta: '))
-        if escolha1 == 5:
-            break
+    if escolha1 == 5:
+        break
+
 
     while True:
         print('==' * 23)
@@ -32,8 +33,8 @@ while True:
                              'Digite 5 para voltar.\n'
                              + '==' * 23 + '\n'
                              'Resposta: '))
-            if escolha2 == 5:
-                break
+        if escolha2 == 5:
+            break
 
         if escolha1 == 1:
             if escolha2 == 1:
@@ -45,10 +46,7 @@ while True:
                 inserir_alunos(nome, cpf, endereco, telefone, email)
 
             elif escolha2 == 2:
-
-            elif escolha2 == 3:
-
-            else:
+                deletar_alunos()
 
 
         if escolha1 == 2 and escolha2 == 1:

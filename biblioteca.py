@@ -1,6 +1,5 @@
 #conectou a biblioteca no banco de dados
 
-
 from teste import *
 cursor = banco.cursor()
 
@@ -11,6 +10,12 @@ cursor = banco.cursor()
 def inserir_alunos(nome,cpf,endereco,telefone,email):
     inserir = f"INSERT INTO alunos (nome,cpf,endereco,telefone,email) VALUES ('{nome}','{cpf}','{endereco}','{telefone}','{email}');"
     cursor.execute(inserir)
+    banco.commit()
+
+def deletar_alunos(delete):
+    deletar = 'DELETE FROM aluno WHERE id_aluno = %s'
+    data = (delete)
+    cursor.execute(deletar,data)
     banco.commit()
 
 def inserir_modalidades(nome):
