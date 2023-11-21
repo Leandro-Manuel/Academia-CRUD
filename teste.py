@@ -35,13 +35,21 @@ while True:
             if escolha2 == 5:
                 break
 
-        if escolha1 == 1 and escolha2 == 1:
-            nome = input('Digite o seu nome: ')
-            cpf = input('Digite o seu cpf: ')
-            endereco = input('Digite o seu endereço: ')
-            telefone = input('Digite o número do seu telefone: ')
-            email = input('Digite o seu e-mail: ')
-            inserir_alunos(nome,cpf,endereco,telefone,email)
+        if escolha1 == 1:
+            if escolha2 == 1:
+                nome = input('Digite o seu nome: ')
+                cpf = input('Digite o seu cpf: ')
+                endereco = input('Digite o seu endereço: ')
+                telefone = input('Digite o número do seu telefone: ')
+                email = input('Digite o seu e-mail: ')
+                inserir_alunos(nome, cpf, endereco, telefone, email)
+
+            elif escolha2 == 2:
+
+            elif escolha2 == 3:
+
+            else:
+
 
         if escolha1 == 2 and escolha2 == 1:
             nome = input('Digite o nome da modalidade: ')
